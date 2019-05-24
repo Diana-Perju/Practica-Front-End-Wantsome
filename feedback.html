@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Feedback Form</title>
+        <meta charset="UTF-8"/>
+        <h1>My feedback form</h1>
+        </head>
+        <body>
+            <ul>
+                <li><label><b>Name:</b></label>
+                <input type="text" minlength="4" name="Name"/>
+                <li><label><b>Email:</b></label>
+                <input type="text" name="Email" required/>
+                <li><label><b>Password:</b></label>
+                <input type="text" minlength="4" name="Password"/>
+               <br>
+               <br>
+                <li><b>Please check all the emotions that apply to you</b></li>
+                <ul>
+                <li><label for="Angry"><b>Angry</b></label><input type="checkbox" checked id="angry" /> 
+                <li><label for="Sad"><b>Sad</b></label><input type="checkbox" /> 
+                <li><label for="Happy"><b>Happy</b></label><input type="checkbox" /> 
+                <li><label for="Ambivalent"><b>Ambivalent</b></label><input type="checkbox" /> </li>
+                </ul>
+                <li><b>How satisfied were you with our service?</b></li>
+                <ul>
+                <li><label for="Very satisfied"><b>Very satisfied</b></label><input type="radio" checked id="agree" />
+                <li><label for="Satisfied"><b>Satisfied</b></label><input type="radio" />
+                <li><label for="Didn't care"><b>Didn't care</b></label><input type="radio" />
+                <li><label for="Dissatisfied"><b>Dissatisfied</b></label><input type="radio" />
+                <li><label for="Very dissatisfied"><b>Very dissatisfied</b></label><input type="radio" /></li>
+                </ul>
+            
+                <li><label><b>Further comments: <textarea></textarea></b></label>
+                <li><label><b>Bio photo: <input type="file"></b></label>
+                <li><label for="Location visited">Select location</b></label></li>
+                <select id="location visited" name="Select location"></select>
+
+                <li><input type="submit" value="submit"></li>
+            
+            
+                
+        </body>
+</html>
