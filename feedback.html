@@ -5,6 +5,7 @@
         <h1>My feedback form</h1>
         </head>
         <body>
+            <form>
             <ul>
                 <li><label><b>Name:</b></label>
                 <input type="text" minlength="4" name="Name"/>
@@ -32,11 +33,20 @@
             
                 <li><label><b>Further comments: <textarea></textarea></b></label>
                 <li><label><b>Bio photo: <input type="file"></b></label>
-                <li><label for="Location visited">Select location</b></label></li>
-                <select id="location visited" name="Select location"></select>
+                
+<b>
+                <li><p style="font-family:'Times New Roman', Times, serif;"><label for="Location Visited">Select location</label><br></li></p>
+                <select id="location visited" name="Select location" required>
+               
+                    <option value="Location1">Location1</option>
+                    <option value="Location2">Location2</option>
+                    <option value="Location3">Location3</option>
+                    <option value="Location4">Location4</option>
+                </select><br>
 
                 <li><input type="submit" value="submit"></li>
-            
+            </b>
+            </form>
             
                 
         </body>
