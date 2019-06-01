@@ -1,0 +1,43 @@
+
+li a {
+    color: red;
+}
+
+div {
+    border: 1px solid black;
+}
+
+a:visited {
+    color: green;    
+  }
+
+  div a:nth-child(3) {  
+    color: #C55;
+  }
+
+  .click-it {
+      color: palevioletred;
+  }  
+
+  #click-here {
+      background: lightblue;
+  }
+
+  .click {
+    background-color: lightpink;
+  }
+  
+  body {
+      font-family: 'Bilbo';font-size: 22px;
+  }
+    
+  img {
+    height: 150px;
+    width: 150px;
+  }
+
+  P {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: violet
+  }
+
