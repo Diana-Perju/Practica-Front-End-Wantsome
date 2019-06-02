@@ -1,5 +1,69 @@
 
-ul:nth-child(2n) {  
-    color: green;
-    
-          }
+
+li:nth-child(2n) {  
+    color: green;          
+    }
+
+li:nth-child(3) {  
+    background-color: lightblue;          
+        }
+
+li:nth-child(1) {  
+    border-top-style: solid;
+    border-top-color: green;
+    border-top-width: 1px;
+   
+}
+
+li:nth-child(7) {  
+    border-bottom-style: dotted;
+    border-bottom-color: blue;
+    border-bottom-width: 5px;
+}
+
+li:nth-child(3) a {  
+    color: red;
+}
+
+li:nth-child(5) a:hover {  
+    color: red;
+    background-color: gray; 
+}
+
+li:nth-child(2) {  
+    list-style: none;          
+    }
+
+li:nth-child(5) {  
+list-style: none;          
+    }
+
+input[type="text"]:hover {
+  
+ background-color : gray; 
+      
+      }
+input[placeholder="first name"]:hover {
+  color:green;
+        }
+input[placeholder="last name"]:hover {
+    color:green;
+     }
+
+input[placeholder="password"]::placeholder {
+    -webkit-text-security: none;
+         }
+
+input[type="email"]::selection {
+    color: pink;
+    background: yellow;
+     }
+
+input[type="submit"]:hover {
+         color: red;  
+        }
+   
+
+
+
+
