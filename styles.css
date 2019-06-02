@@ -11,10 +11,6 @@ a:visited {
     color: green;    
   }
 
-  div a:nth-child(3) {  
-    color: #C55;
-  }
-
   .click-it {
       color: palevioletred;
   }  
@@ -31,6 +27,10 @@ a:visited {
       font-family: 'Bilbo';font-size: 22px;
   }
     
+  div a:nth-child(3) {  
+    color: #C55;
+  }
+
   img {
     height: 150px;
     width: 150px;
