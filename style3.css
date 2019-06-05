@@ -1,8 +1,19 @@
 
-.Boxes {
+.Container {
     position: relative;
-}
+    border-style: green solid;
+    box-sizing: content-box;
+    widows: 1000px;;
+    height: 400px;}
+    
 
+div > section {
+    box-sizing: content-box;
+    border: solid;
+    margin: 20px;
+    position: static;
+    padding: 5px;
+}
 ul {
     box-sizing: border-box;
     width:100px;
@@ -31,10 +42,10 @@ ul {
     width: 500;
 }
 
-#section3{
+#section3 {
     border: solid;
     position: relative;
     height: 20px;
     width: 500;
     margin: auto;
-
+}
