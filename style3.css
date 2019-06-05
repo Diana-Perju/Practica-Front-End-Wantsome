@@ -1,0 +1,40 @@
+
+.Boxes {
+    position: relative;
+}
+
+ul {
+    box-sizing: border-box;
+    width:100px;
+    height: 150px;
+    border: solid;
+    border-color: pink;
+    margin: 20px;
+    position: static;
+}
+
+#section1 {
+    border: solid;
+    position: relative;
+    height: 20px;
+    width: 100px;
+    margin: auto;
+
+ 
+}
+#section2 {
+    border: solid;
+    font-display: block;
+    color: black;
+    position: relative;
+    height: 20px;
+    width: 500;
+}
+
+#section3{
+    border: solid;
+    position: relative;
+    height: 20px;
+    width: 500;
+    margin: auto;
+
