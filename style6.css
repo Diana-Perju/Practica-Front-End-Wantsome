@@ -1,0 +1,59 @@
+ 
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+  }
+   
+   #appetizers  { 
+    display: flex;
+    background-image: url(Poze/appetizersandbites.jpg);
+    width: 48vw;
+    height: 45vh;
+    margin-top: 1%; 
+    margin-bottom: 2%;
+    
+  }
+
+  #breads  { 
+    display: flex;
+    background-image: url(Poze/breads.jpg);
+    width: 48vw;
+    height: 45vh;
+    margin-top: 1%;
+  }
+
+  #drinks  { 
+    display: flex;
+    background-image: url(Poze/drinks.jpg);
+    width: 48vw;
+    height: 45vh;
+    margin-bottom: 1%;
+  }
+
+  #fast  { 
+    display: flex;
+    background-image: url(Poze/fast.jpg);
+    width: 48vw;
+    height: 45vh;   
+  }
+
+div.text {
+        align-self: flex-end;
+        float: left;
+        color: white;
+        height: 5vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: xx-large;
+        padding: 5vh 5vw 5vw 5vw;
+      }
+
