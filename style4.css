@@ -1,0 +1,47 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+.container {
+   float: none;
+   border: 2px solid green;
+   border-bottom: none;
+
+  }
+
+  nav {
+    width: 125px;
+    border: 1px solid pink;
+    color: pink;
+    float: left;
+
+  }
+
+  
+section {
+    border: 2px solid yellow;
+    float: left;
+   }
+  
+   div.gallery  { 
+    background-image: url(Poze/Giraffe.JPG);
+    width: 400px;
+    height: 400px;
+    float: right;
+    align-content: center;
+   
+  }
+  
+  footer {
+    clear: both;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    background-color: white;
+    border: 2px solid green;
+    text-align: center;
+    border-bottom: none;
+
+  }
