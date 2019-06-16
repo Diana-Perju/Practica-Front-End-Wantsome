@@ -1,0 +1,30 @@
+#box1 {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+#box2 {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+
+
+body {
+    transition: width 1s ease-in-out;
+    
+}
+
+body:hover #box2 {
+    width: 300px;
+    transition: width 2s ease;
+    animation: flip 2s ease-in-out;
+}
+ 
+body:hover #box1{ 
+    width: 300px;
+    transition: width 2s ease;
+    transition-delay: 2s;
+}
+ 
