@@ -1,0 +1,3 @@
+@mixin  bounce ($y){
+    transform: translateY($y);
+  }

@@ -1,0 +1,105 @@
+body {
+  border: 90px solid black;
+  background-color: lightblue;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  border: border;
+  margin: 0;
+  background-color: background-color;
+}
+
+body:hover {
+  background-color: lightgreen;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
+}
+
+#reddot {
+  background-color: red;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: 1.5s bounce ease infinite;
+          animation: 1.5s bounce ease infinite;
+}
+
+body:hover #reddot {
+  width: 200px;
+  -webkit-transition: width 2s ease;
+  transition: width 2s ease;
+  height: 200px;
+}
+
+#yellowdot {
+  background-color: yellow;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 3%;
+  -webkit-animation: 1.5s bounce ease infinite;
+          animation: 1.5s bounce ease infinite;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+body:hover #yellowdot {
+  width: 200px;
+  height: 200px;
+  -webkit-transition: width 2s ease;
+  transition: width 2s ease;
+}
+
+#bluedot {
+  background-color: blue;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: 1.5s bounce ease infinite;
+          animation: 1.5s bounce ease infinite;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+body:hover #bluedot {
+  width: 200px;
+  height: 200px;
+  -webkit-transition: width 2s ease;
+  transition: width 2s ease;
+}
+
+@-webkit-keyframes bounce {
+  50% {
+    -webkit-transform: translateY(300px);
+            transform: translateY(300px);
+  }
+}
+
+@keyframes bounce {
+  50% {
+    -webkit-transform: translateY(300px);
+            transform: translateY(300px);
+  }
+}
+/*# sourceMappingURL=style9.css.map */
