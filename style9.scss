@@ -1,0 +1,78 @@
+@import '_variables.scss';
+@import '_theme1.scss';
+@import '_mixins.scss';
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+border: border;
+margin: 0;
+background-color: background-color;
+}
+
+body:hover {
+background-color: lightgreen;   
+transform: rotate( -180deg );        
+transition: transform 1s ease;
+transition-delay: 2s;
+}
+
+#reddot {
+background-color: $redcolor;
+border-radius: $borderradius;
+width: $dotwidth;
+height: $dotheight;
+animation: 1.5s bounce ease infinite;
+}
+
+body:hover #reddot {
+width: $hoversize;
+transition: width 2s ease;
+height: $hoverheight;   
+}
+
+#yellowdot {
+background-color: $yellowcolor;
+border-radius: $borderradius;
+width: $dotwidth;
+height: $dotheight;
+margin: $margin;
+animation: 1.5s bounce ease infinite;
+animation-delay: 0.2s;
+}
+
+body:hover #yellowdot {
+width: $hoversize;
+height: $hoverheight;
+transition: width 2s ease;
+}
+
+
+#bluedot {
+background-color: $bluecolor;
+border-radius: $borderradius;
+width: $dotwidth;
+height: $dotheight;
+animation: 1.5s bounce ease infinite;
+animation-delay: 0.4s;
+}
+
+body:hover #bluedot {
+    width: $hoversize;
+    height: $hoverheight;
+    transition: width 2s ease;
+}
+
+@keyframes bounce {
+    50% {
+        @include bounce (300px);
+        }
+      }
+     
+
