@@ -8,11 +8,7 @@ dif(6, 3);
 
 
 
-
-
-
-
-//function declaration
+//function expressions
 
 /*function add(a, b) {
   const sum = a + b;
