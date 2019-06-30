@@ -1,4 +1,21 @@
-function minArray(array) {
+
+function Prime(number) {
+  if (number === 2) {
+    return true;
+  } else if (number > 1) {
+    for (var i = 2; i <= Math.sqrt(number); i++) {
+      if (number % i === 0) {
+        return false; 
+      } else if (number === i * i);
+      return true; 
+    }
+  }
+}
+
+console.log(Prime(9));
+
+
+/*function minArray(array) {
 
 var minvalue = array[0];
 for (var i = 0; i < array.length; i++) {
