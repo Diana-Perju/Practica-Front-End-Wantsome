@@ -1,14 +1,17 @@
 
+
+
+
 /*
-9. Creati o functie numita buildFun care primeste un numar N ca argument
+//9. Creati o functie numita buildFun care primeste un numar N ca argument
 si returneaza un array cu N elemente de tip function. Cand apelam pe rand
 functiile din acest array ar trebui sa logam la consola numerele de la
 0 la N.
 
 
-function buildFun(n){
+function buildFun(n) {
   var arr = [];
-  for(i = 0; i <= n; i++){
+  for(i = 0; i <= n; i++) {
     arr.push(i);
   }
   console.log(arr);
