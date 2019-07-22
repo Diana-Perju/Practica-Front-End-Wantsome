@@ -1,3 +1,4 @@
+
 function createBankAcc(name, balance) {
 
     var name = name;
@@ -58,7 +59,7 @@ function createBankAcc(name, balance) {
                 })
 
             transfer(amount) 
-            newBalance.pop({
+            newBalance.push({
                 amount: balance,
                 operation: "transfer",
                 date: new Date,  

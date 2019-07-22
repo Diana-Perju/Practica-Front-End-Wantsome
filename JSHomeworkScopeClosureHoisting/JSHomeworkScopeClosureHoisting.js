@@ -1,4 +1,5 @@
 
+
 /*
 9. Creati o functie numita buildFun care primeste un numar N ca argument
 si returneaza un array cu N elemente de tip function. Cand apelam pe rand
@@ -6,14 +7,22 @@ functiile din acest array ar trebui sa logam la consola numerele de la
 0 la N.
 
 
-function buildFun(n){
-  var arr = [];
-  for(i = 0; i <= n; i++){
-    arr.push(i);
+function buildFun(n) {
+  const result = [];
+
+  for(let i = 0; i < n; i++) {
+  result.push(function() {
+  console.log(i);
+});
   }
-  console.log(arr);
+return result;
 }
-console.log(typeof buildFun(100))
+
+const functions = buildFun(5);
+functions.forEach(function(el) {
+  el()
+})
+
 
 
 // 8.
@@ -25,7 +34,6 @@ const add5 = makeAdder(5)
 add3(10) -> 13
 add3(5) -> 8
 add5(10) -> 15
-
 
 
 
@@ -98,18 +106,21 @@ removeDuplicates(122334) - 1234
 
 
 
+function removeDups(input) {
+const result = [];
+const stringfindInput = String(input);
 
-function removeDups(str){
-    var unique = '';
-    for(var i = 0; i < str.length; i++){
-        if(unique.indexOf(str[i])==-1){
-            unique += str[i];
-        }
-    }
-    return unique;
+  for(let i = 0; i < input.length; i++) {
+     console.log(stringfindInput[i]);
+     if(!result.includes(stringfindInput[i])) {
+       result.push(stringfindInput[i]);
+     }
+      }
+  
+  return result.join("");
 }
-    console.log(removeDups("aabcdeef"));
-    console.log(removeDups("122334"));
+  
+  console.log(removeDups("122334"));
 
 
 
@@ -129,7 +140,7 @@ function isAnagram (str1, str2) {
 
 console.log(isAnagram('ana','naa')); 
 console.log(isAnagram('no','yes')); 
-console.log(isAnagram('foo','oof)); 
+console.log(isAnagram('foo','oof')); 
 
 
 //3. Creati o functie care primeste o lista de persoane de forma {name, age} si
@@ -138,37 +149,19 @@ incat conditia de filtrare sa poate fi controlata printr-o functie
 pasata ca argument.
 
 
-/*var person1 = {
-name: "Adult1",
-age: 24
-};
-  
-var person2 = {
-name: "Adult2",
-age: 18
+const people = [
+  { name: "costel", age: 23 },
+  { name: "ion", age: 15 },
+  { name: "maria", age: 18 },
+]
+
+function bouncePeople(people = []) {
+  return people.filter(function(person) {
+    return person.age >= 18;
+  });
 };
 
-var person3 = {
-name: "Minor",
-age: 15
-};
-  
-  function adultPerson(person) {
-  
-    if (person.age >= 18) {
-  return person.name;
-    }
-  
-    else {
-  return person.name;
-    }
-  }
-  
-console.log(adultPerson(person1));
-console.log(adultPerson(person2));
-console.log(adultPerson(person3));
-
-
+console.log(bouncePeople(people));
 
 
 //2. Scrieti o functie care sa aiba output-ul asta
@@ -208,4 +201,5 @@ function longest(str) {
     }
     let str = ['a', 'ab', 'abcdefgh1', 'abcdefgh2', 'abcd', 'abcde'];
     console.log(longest(str));
-    */
+
+  */
