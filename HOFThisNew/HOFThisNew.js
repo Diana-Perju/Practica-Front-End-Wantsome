@@ -19,7 +19,6 @@ console.log(obj2.mult.apply({...obj,...obj2}));
 
 console.log(obj2.fn());
 
-
 /*function greet() {
   console.log(this.name);
 }
