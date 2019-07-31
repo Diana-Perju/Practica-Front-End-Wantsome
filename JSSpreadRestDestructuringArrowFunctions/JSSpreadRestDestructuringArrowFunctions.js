@@ -1,3 +1,26 @@
+
+//exercitiu destructurare
+var matrice = {
+neo: "Keanu Reeves",
+morpheus: "Laurence Fishbourne",
+trinity: "Carrie Moss",
+details: {
+year: 1999,
+rating: 8.7,
+}
+};
+
+var releaseYear = matrice.details.year;
+var morpheus = matrice.morpheus;
+console.log(morpheus, releaseYear);
+
+var neo = matrice.neo;
+var { ...rest } = matrice;
+
+var {morpheus, details:{year:releaseYear}} = matrice;
+console.log(neo[0]);
+
+/*
 //arrow function
 var car = {
     name: 'Tesla',
