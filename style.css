@@ -1,0 +1,33 @@
+#box1 {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+
+#box2 {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+}
+
+body {
+  -webkit-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+}
+
+body:hover #box2 {
+  width: 300px;
+  -webkit-transition: width 2s ease;
+  transition: width 2s ease;
+  -webkit-animation: flip 2s ease-in-out;
+          animation: flip 2s ease-in-out;
+}
+
+body:hover #box1 {
+  width: 300px;
+  -webkit-transition: width 2s ease;
+  transition: width 2s ease;
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
+}
+/*# sourceMappingURL=style.css.map */
