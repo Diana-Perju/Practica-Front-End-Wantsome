@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-color: lightcyan;
+  }
+
+  form {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black;
+    background-color: lightgray;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+   }
+
+  #allpets { 
+    background-image: url(Photos/allpets.jpg);
+    width: 65vw;
+    height: 50vh;
+  }
+
+ section {
+     display: flex;
+     align-content: center;
+     width: 200px;
+     height: 200px;
+ }
