@@ -1,22 +1,23 @@
-var x = document.getElementById("setInt");
+
+
+
+/*var x = document.getElementById("setInt");
 
 console.log(x);
 
 x.innerHTML = new Date();
 
 setInterval(function() {
-
 x.innerHTML = new Date();
 }, 1000)
 
 
 
 var btn = document.getElementById("stopButton");
-
 btn.addEventListener("stopButton");
 
 function stopT() {
-  clearInterval(x);
+  clearInterval(setInt);
 }
 
 /*

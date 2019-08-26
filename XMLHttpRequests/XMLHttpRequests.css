@@ -1,0 +1,12 @@
+body
+{
+align-content: center;
+border: 3px solid blue;
+display: auto;
+background-color: brown;
+}
+
+button {
+
+    border: 3px solid blueviolet;
+}
